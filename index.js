@@ -12,7 +12,7 @@ const updatedContent = {
     body: updating_body
 };
 
-const updateUrl = `https://api.github.com/repos/Swapnil-Devops/test_repo/discussions/${discussionId}`;
+const updateUrl = `https://api.github.com/repos/kiran-godse/comment-workflow/discussions/${discussionId}`;
 
 
 // Set up headers
