@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import * as core from "@actions/core";
 
 const accessToken = core.getInput("PAT"); 
-const discussionId = core.getInput("discussionId"); 
+const discussionId = "D_kwDOKCGw7s4AVF-r"; //core.getInput("discussionId"); 
 const updating_body = core.getInput("updatedbody");
 
 const graphqlMutation = `
