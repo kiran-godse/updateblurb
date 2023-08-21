@@ -18,15 +18,22 @@ const graphqlMutation = `
     }
   }
 `;
+console.log ("accessToken-", accessToken );
+console.log ("discussionId-" , discussionId );
+console.log ("updating_body-", updating_body );
 
 
 const apiUrl = 'https://api.github.com/graphql';
+console.log ("apiUrl-", apiUrl );
 
 
 const headers = {
-  Authorization: `Bearer ${accessToken}`,
+  Authorization: 'Bearer ' + ${accessToken},
   'Content-Type': 'application/json',
 };
+
+console.log ("headers-", headers );
+
 
 fetch(apiUrl, {
   method: 'POST',
@@ -34,6 +41,7 @@ fetch(apiUrl, {
   body: JSON.stringify({ query: graphqlMutation }),
 })
 .then(response => {
+    console.log ("response-", response);
     if (response.status === 200) {
         console.log('Discussion updated successfully.');}
 });
